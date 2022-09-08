@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections;
 
-public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
+public class JoyStick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
 
     [Header("Settings")]
@@ -124,7 +124,7 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             isFree = false;
             //Get Position of current touch
-            Vector3 position = bl_JoystickUtils.TouchPosition(m_Canvas,GetTouchID);
+            Vector3 position = JS_Utility.TouchPosition(m_Canvas,GetTouchID);
 
             //Rotate into the area circumferential of joystick
             if (Vector2.Distance(DeathArea, position) < radio)

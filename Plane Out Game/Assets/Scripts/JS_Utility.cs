@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public static class bl_JoystickUtils
+public static class JS_Utility
 {
 
     public static Vector3 TouchPosition(this Canvas _Canvas,int touchID)

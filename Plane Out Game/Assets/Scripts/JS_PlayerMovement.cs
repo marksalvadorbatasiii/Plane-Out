@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 
-public class bl_Controller : MonoBehaviour {
+public class JS_PlayerMovement : MonoBehaviour {
 
     /// <summary>
     /// Step #1
     /// We need a simple reference of joystick in the script
     /// that we need add it.
     /// </summary>
-	[SerializeField]private bl_Joystick Joystick;//Joystick reference for assign in inspector
+	[SerializeField]private JoyStick Joystick;//Joystick reference for assign in inspector
 
     [SerializeField]private float Speed = 5;
 
